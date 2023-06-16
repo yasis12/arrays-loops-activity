@@ -5,7 +5,12 @@
  * 2. Write a loop that logs out each hobby
  * 3. After the loop, log out the total number of
  *    hobbies
- */
+ */  let memeberHobbies = ['skating', 'gaming', 'sky diving', 'cooking'];
+        for (let i = 0; i < memeberHobbies.length; i += 1){
+            console.log("Member Hobbies", memeberHobbies[i]);
+         }
+        console.log('Total Hobbies: ', memeberHobbies.length);
+
 
 
 // Example output
@@ -25,6 +30,15 @@
  * 4. Output the array and number of times teal was found
  */
 
+    let colors = ['teal', 'gold', 'yellow', 'black', 'orange', 'teal'];
+    let tealCount = 0;
+    for  (let i = 0; i < colors.length; i += 1){
+        if (colors[i] === 'teal'){
+            tealCount++;
+        }
+    }
+    console.log('count of teal: ', tealCount);
+
 
 // Example output
 // green, red, teal, orange, teal
@@ -40,7 +54,19 @@
  *    array and even numbers in the evenNumbers array.
  * 4. Output the original array, odd number array and even number array
  */
-
+    let numbers = [ 2, 4, 5, 6, 7, 8, 19, 21];
+    const oddNumbers = [];
+    const evenNumbers = [];
+    for (let i = 0; i < numbers.length; i++){
+        if (numbers[i] % 2 === 0) {
+            evenNumbers.push(numbers[i]);
+        }else{
+            oddNumbers.push(numbers[i]);
+        }
+    }
+    console.log('Original Array',numbers);
+    console.log('Even Numbers:', evenNumbers);
+    console.log('Odd Numbers', oddNumbers);
 
 // Example output
 // 3, 7, 2, 8, 11, 4, 2
@@ -56,6 +82,7 @@
  * 3. Write a loop that adds the opposite value to the toggled array
  * 4. Output both arrays
  */
+let tureFalse = [true, false, ture, true];
 
 
 // Example output
